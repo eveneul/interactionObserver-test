@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.box-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.box-list .box-item {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  transition: all 0.3s;
+}
+.box-list .box-item + .box-item {
+  margin-top: 100px;
+}
+.box-list .box-item.in-view {
+  background-color: red;
+}/*# sourceMappingURL=style.css.map */
